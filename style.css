@@ -1,0 +1,40 @@
+.calculatorBox{
+    background-color: aquamarine;
+    height: auto;
+    width: 45%;
+    padding: 15px;
+}
+
+.display{
+    height: 100px;
+    background-color: white;
+    margin: 2.5%;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers, .operators{
+    flex-basis: 20%;
+    margin: 2.5%;
+
+}
+
+.clear, #equals{
+    flex-basis: 45%;
+    margin: 2.5%; 
+}
+
+.button{
+    display: block;
+    width: 100%;
+}
+
