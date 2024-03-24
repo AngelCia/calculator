@@ -13,11 +13,20 @@ function subtract(a, b){
 }
 
 function multiply(a, b){
-    return a * b;
+    let result = a*b;
+    let decimalValue = result.toString().indexOf(".");
+    let decimalLength = result.toString().substring(decimalValue+1);
+    if(decimalLength.length > 3) return result.toFixed(3);
+    return result;
 }
 
 function divide(a, b){
-    return a / b;
+    if (b == 0) alert("what are you some kind of idiot? You can't divide by 0.");
+    let result = a/b;
+    let decimalValue = result.toString().indexOf(".");
+    let decimalLength = result.toString().substring(decimalValue+1);
+    if(decimalLength.length > 3) return result.toFixed(3);
+    return result;
 }
 
 function operate(a, operator, b){

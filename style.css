@@ -4,16 +4,34 @@
   }
   
   .calculatorBox{
-    background-color: lavender;
-    height: auto;
-    width: 45%;
+    background-color: rgb(101, 101, 155);
+    height: 520px;
+    width: 300px;
     padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -165px;
+    border-top: 4px solid lavender;
+    border-left: 8px solid lavender;
+    border-bottom:10px solid rgb(34, 34, 72);
+    border-right: 8px solid rgb(34, 34, 72);
+    border-radius: 25px;
 }
 
+p{
+    color: white;
+}
 .display{
     display: flex;
-    height: 75px;
-    background-color: grey;
+    height: 12%;
+    background-color: rgb(144, 144, 144);
+    border-top: 7px solid rgb(98, 98, 98);
+    border-left: 5px solid rgb(98, 98, 98);;
+    border-bottom:2.5px solid rgb(183, 183, 183);
+    border-right: 5px solid rgb(183, 183, 183);
+    border-radius: 15px;
     margin: 2.5%;
     padding: 2.5%;
     justify-content: end;
@@ -29,23 +47,62 @@ h6{
 p{
     font-family: PerfectDOS;
     font-size: 16pt;
+    margin: 0px;
 }
 
 .buttons{
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 64%;
 }
 
 .row1{
     display: flex;
     justify-content: space-between;
+    height: 16%;
 }
 
 .numbers, .operators{
+    border-radius: 15px;
     flex-basis: 20%;
     margin: 2.5%;
+    background-color: rgb(76, 76, 122);
+    border-top: 2.5px solid lavender;
+    border-left: 5px solid lavender;
+    border-bottom:7px solid rgb(34, 34, 72);
+    border-right: 5px solid rgb(34, 34, 72);
+}
 
+.numbers:active, .operators:active, .clear:active{
+    border-bottom: 2.5px solid lavender;
+    border-right: 5px solid lavender;
+    border-top:7px solid rgb(34, 34, 72);
+    border-left: 5px solid rgb(34, 34, 72);
+}
+
+.numbers:hover, .operators:hover{
+    background-color: rgb(66, 66, 110);
+}
+
+.clear:hover{
+    background-color: rgb(183, 75, 63);
+}
+
+.clear{
+    border-radius: 15px;
+    background-color: rgb(218, 88, 73);
+    border-top: 2.5px solid lavender;
+    border-left: 5px solid lavender;
+    border-bottom:7px solid rgb(34, 34, 72);
+    border-right: 5px solid rgb(34, 34, 72);
+}
+
+.equals{
+    background-color: rgb(52, 52, 97);
+}
+
+.equals:hover{
+    background-color: rgb(41, 41, 78);
 }
 
 .clear, .equals{
@@ -54,7 +111,7 @@ p{
 }
 
 .button{
-    display: block;
+    display: flex;
     width: 100%;
 }
 
